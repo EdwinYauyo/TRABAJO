@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\cameraMov.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/TRABAJO/Operations for kids/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
