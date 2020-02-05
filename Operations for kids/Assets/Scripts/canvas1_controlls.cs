@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class canvas1_controlls : MonoBehaviour
 {
-    GameObject cam;
-    GameObject game1;
-    GameObject game2;
-    GameObject game3;
-    GameObject game4;
+    public GameObject cam;
+    public GameObject canvas1;
+    public GameObject game1;
+    public GameObject game2;
+    public GameObject game3;
+    public GameObject game4;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,8 @@ public class canvas1_controlls : MonoBehaviour
 
     public void movGame1()
     {
-        cam.transform.position = game1.transform.position;
+        cam.transform.position = game1.transform.position+new Vector3(0,0,-10);
+        canvas1.SetActive(false);
     }
 
     public void movGame2()
