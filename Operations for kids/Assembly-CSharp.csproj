@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\Invoke_Left.cs" />
     <Compile Include="Assets\Scripts\Invoke_Right.cs" />
+    <Compile Include="Assets\Scripts\Tittle.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/TRABAJO/Operations for kids/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

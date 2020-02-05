@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class cameraMov : MonoBehaviour
 {
     public GameObject cam;
+    public GameObject options;
     public GameObject canvas1;
+    public GameObject returnB;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +18,14 @@ public class cameraMov : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount==1 && cam.transform.position==new Vector3(0,0,-10))
-        {
-            cam.transform.position = new Vector3(0, -12, -10);//despues de la pantalla de carga.
-            canvas1.SetActive(true);
-;       }
+        
+        
+    }
+
+    public void Return()
+    {
+        SceneManager.LoadScene("SampleScene");
+        
         
     }
 }

@@ -10,6 +10,7 @@ public class canvas1_controlls : MonoBehaviour
     public GameObject game2;
     public GameObject game3;
     public GameObject game4;
+    public GameObject returnB;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,18 +27,25 @@ public class canvas1_controlls : MonoBehaviour
     {
         cam.transform.position = game1.transform.position+new Vector3(0,0,-10);
         canvas1.SetActive(false);
+        returnB.SetActive(true);
     }
 
     public void movGame2()
     {
-        cam.transform.position = game2.transform.position;
+        cam.transform.position = game2.transform.position + new Vector3(0, 0, -10);
+        canvas1.SetActive(false);
+        returnB.SetActive(true);
     }
     public void movGame3()
     {
-        cam.transform.position = game3.transform.position;
+        cam.transform.position = game3.transform.position + new Vector3(0, 0, -10);
+        canvas1.SetActive(false);
+        returnB.SetActive(true);
     }
     public void movGame4()
     {
-        cam.transform.position = game4.transform.position;
+        cam.transform.position = game4.transform.position + new Vector3(0, 0, -10);
+        canvas1.SetActive(false);
+        returnB.SetActive(true);
     }
 }
