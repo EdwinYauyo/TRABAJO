@@ -29,7 +29,7 @@ public class DragAndDrop : MonoBehaviour
         }
         
 
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended) {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && moveFlag) {
             touchTimeFinish = Time.time;
             timeInterval = touchTimeFinish - touchTimeStart;
             endPos = Input.GetTouch(0).position;
@@ -37,6 +37,9 @@ public class DragAndDrop : MonoBehaviour
             GetComponent<Rigidbody2D>().AddForce(-direction / timeInterval * throwForce);
             moveFlag = false;
         }
+        if (transform.position.x < 10 || transform.position.x > 28 || transform.position.y > -7 || transform.position.y < -28) {
+            Destroy(gameObject, .3f);
+        } 
     }
  //if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
 
