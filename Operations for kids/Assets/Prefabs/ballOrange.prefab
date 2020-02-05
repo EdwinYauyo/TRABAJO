@@ -118,7 +118,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 39ce57b059d3a81438de3fad3d6d8761, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &39592860897953261
 MonoBehaviour:
@@ -132,4 +132,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536b0417d628b2c448b2f4c09950848b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 2
+  b: {fileID: 0}
+  throwForce: 1
