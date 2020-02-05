@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\cameraMov.cs" />
+    <Compile Include="Assets\Scripts\canvas1_controlls.cs" />
     <Compile Include="Assets\Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\Invoke_Left.cs" />
     <Compile Include="Assets\Scripts\Invoke_Right.cs" />

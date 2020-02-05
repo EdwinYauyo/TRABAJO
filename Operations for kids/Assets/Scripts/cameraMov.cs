@@ -5,6 +5,7 @@ using UnityEngine;
 public class cameraMov : MonoBehaviour
 {
     public GameObject cam;
+    public GameObject canvas1;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,9 @@ public class cameraMov : MonoBehaviour
     {
         if (Input.touchCount==1 && cam.transform.position==new Vector3(0,0,-10))
         {
-            cam.transform.position = new Vector3(20, 0, -10);
+            cam.transform.position = new Vector3(0, -12, -10);//despues de la pantalla de carga.
+            canvas1.SetActive(true);
 ;       }
+        
     }
 }
