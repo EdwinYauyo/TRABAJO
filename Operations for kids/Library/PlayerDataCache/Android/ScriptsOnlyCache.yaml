@@ -5,6 +5,8 @@ ScriptsOnlyBuild:
     - DragAndDrop
     - Invoke_Left
     - Invoke_Right
+    - Obj
+    - Rope
     - Suma
     - Tittle
     - cameraMov
@@ -88,6 +90,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11350}
     - Class: 114
       Script: {instanceID: 11472}
+    - Class: 114
+      Script: {instanceID: 23986}
+    - Class: 114
+      Script: {instanceID: 35048}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -103,6 +109,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 233
       Script: {instanceID: 0}
     Assets/Scenes/Tittle.scene.unity:
     - Class: 1
@@ -612,8 +620,20 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Rope
+  - hash:
+      serializedVersion: 2
+      Hash: 58462b8234037407e9e64694e0d08f0f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Obj
   platform: 13
   scenePathNames:
   - Assets/Scenes/Tittle.scene.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/PIERO/Documents/Github/TRABAJO/Operations for kids/throwing.apk
+  playerPath: E:/aea.apk

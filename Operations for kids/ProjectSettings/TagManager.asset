@@ -6,6 +6,10 @@ TagManager:
   tags:
   - ball
   - impulsor
+  - obj
+  - fijo
+  - obj1
+  - obj2
   layers:
   - Default
   - TransparentFX
