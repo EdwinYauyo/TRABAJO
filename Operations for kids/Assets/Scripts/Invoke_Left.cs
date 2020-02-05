@@ -18,7 +18,7 @@ public class Invoke_Left : MonoBehaviour
                 ball_flag = true;
             }
             if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos) && Input.GetTouch(0).phase == TouchPhase.Ended && ball_flag) {
-                Instantiate(bally, transform.position, Quaternion.identity);
+                Instantiate(bally, transform.position + new Vector3(1, -1, 0), Quaternion.identity);
                 number_balls_l++;
                 ball_flag = false;
             }
