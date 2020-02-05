@@ -6,6 +6,7 @@ public class canvas1_controlls : MonoBehaviour
 {
     public GameObject cam;
     public GameObject canvas1;
+    public GameObject canvas_game1;
     public GameObject game1;
     public GameObject game2;
     public GameObject game3;
@@ -28,6 +29,7 @@ public class canvas1_controlls : MonoBehaviour
         cam.transform.position = game1.transform.position+new Vector3(0,0,-10);
         canvas1.SetActive(false);
         returnB.SetActive(true);
+        canvas_game1.SetActive(true);   
     }
 
     public void movGame2()

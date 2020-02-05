@@ -7,7 +7,7 @@ using UnityEngine;
 public class DragAndDrop : MonoBehaviour
 {
 
-
+    public BallOutCounter b;
     Vector2 startPos, endPos, direction;
     float touchTimeStart, touchTimeFinish, timeInterval;
     //    [Range(0.05f, 1f)]
@@ -38,9 +38,11 @@ public class DragAndDrop : MonoBehaviour
             moveFlag = false;
         }
         if (transform.position.x < 10 || transform.position.x > 28 || transform.position.y > -7 || transform.position.y < -28) {
-            Destroy(gameObject, .3f);
-        } 
+            Destroy(gameObject, 0f);
+        }
     }
+
+
  //if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
 
 }

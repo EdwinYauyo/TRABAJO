@@ -6,6 +6,7 @@ public class BallOutCounter : MonoBehaviour
 {
     public GameObject ballie;
     public int count = 5;
+  
     void Start()
     {
         for (int i = 0; i < count; i++) {
@@ -16,9 +17,12 @@ public class BallOutCounter : MonoBehaviour
     {
         if (col.gameObject.CompareTag("ball"))
         {
-
+            
             ballie.GetComponent<Rigidbody2D>().AddForce(new Vector3(-50, 20, 0));
             count--;
+         
         }
     }
+
+   
 }
