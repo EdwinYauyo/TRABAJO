@@ -42,7 +42,14 @@ public class DragAndDrop : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("impulsor"))
+        {
 
- //if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
+            GetComponent<Rigidbody2D>().AddForce(new Vector3(0, 20, 0), ForceMode2D.Impulse);
+        }
+    }
+    //if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
 
 }

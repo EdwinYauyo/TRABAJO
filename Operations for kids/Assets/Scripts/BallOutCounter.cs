@@ -17,8 +17,6 @@ public class BallOutCounter : MonoBehaviour
     {
         if (col.gameObject.CompareTag("ball"))
         {
-            
-            ballie.GetComponent<Rigidbody2D>().AddForce(new Vector3(-50, 20, 0));
             count--;
          
         }
