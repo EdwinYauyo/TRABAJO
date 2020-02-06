@@ -97,8 +97,9 @@ public class MoveBallContainers : MonoBehaviour
                     // restore initial parameters
                     // when touch is ended
                     moveAllowed = false;
-                    rb.freezeRotation = false;
-                    rb.gravityScale = 2;
+                    
+                    rb.GetComponent<Rigidbody2D>().constraints=RigidbodyConstraints2D.FreezePositionY|RigidbodyConstraints2D.FreezeRotation;
+
 
                     break;
             }

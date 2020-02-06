@@ -22,7 +22,7 @@ public class InvokeLvl4 : MonoBehaviour
             if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos) && Input.GetTouch(0).phase == TouchPhase.Ended && ball_flag)
             {
                 Debug.Log("xd");
-                Instantiate(bally, transform.position + new Vector3(-4.67f, 1.89f, 0), Quaternion.identity);
+                Instantiate(bally, transform.position + new Vector3(-3.67f, 1.89f, 0), Quaternion.identity);
                 ball_flag = false;
             }
         }
