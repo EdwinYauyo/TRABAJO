@@ -12,18 +12,7 @@ public class cameraMov : MonoBehaviour
     public User_reg us;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-   
-    // Update is called once per frame
-    void Update()
-    {
-        us.txt = nombre;
-        
-    }
-
+  
     public void Return()
     {
         SceneManager.LoadScene("SampleScene");

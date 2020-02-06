@@ -7,6 +7,7 @@ public class ContainerLvl4 : MonoBehaviour
     public GameObject ballie, cesta;
     public int n1;
     public int n2;//como maximo 5
+    public GameObject[] arr = new GameObject[5];
     void Start()
     {
         while (!(n1 > n2 && n1%n2 == 0)) {
@@ -15,7 +16,7 @@ public class ContainerLvl4 : MonoBehaviour
 
         for (int i = 0; i < n2; i++)
         {
-            Instantiate(cesta, new Vector3(31f + (i+1)*14f / (n2), -4.5f, -3), Quaternion.identity);
+            arr[i].transform.position = new Vector3(31f + (i + 1) * 14f / (n2), -4.5f, -3); 
         }
     }
 
@@ -25,3 +26,5 @@ public class ContainerLvl4 : MonoBehaviour
         n2 = rnd.Next(2, 5);
     }
 }
+
+//new Vector3(31f + (i+1)*14f / (n2), -4.5f, -3)
