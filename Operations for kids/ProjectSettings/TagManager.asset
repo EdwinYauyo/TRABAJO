@@ -8,8 +8,16 @@ TagManager:
   - impulsor
   - obj
   - fijo
-  - obj1
-  - obj2
+  - L1
+  - R1
+  - L2
+  - R2
+  - L3
+  - R3
+  - L4
+  - R4
+  - L5
+  - R5
   layers:
   - Default
   - TransparentFX
@@ -19,8 +27,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - first
+  - second
   - 
   - 
   - 

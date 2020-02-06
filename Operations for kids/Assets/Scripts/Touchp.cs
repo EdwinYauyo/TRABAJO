@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Rope : MonoBehaviour
+public class Touchp : MonoBehaviour
 {
 
 
@@ -96,8 +96,7 @@ public class Rope : MonoBehaviour
                 case TouchPhase.Moved:
                     // if you touches the ball and movement is allowed then move
                     if (GetComponent<CircleCollider2D>() == Physics2D.OverlapPoint(touchPos) && moveAllowed)
-                        
-                    rb.MovePosition(new Vector2(touchPos.x - deltaX, touchPos.y - deltaY));
+                        rb.MovePosition(new Vector2(touchPos.x - deltaX, touchPos.y - deltaY));
                     break;
 
 
@@ -109,7 +108,7 @@ public class Rope : MonoBehaviour
                     // when touch is ended
                     moveAllowed = false;
                     rb.freezeRotation = false;
-                    rb.gravityScale = 2;
+                    
                     PhysicsMaterial2D mat = new PhysicsMaterial2D();
                     mat.bounciness = 0.75f;
                     mat.friction = 0.4f;
