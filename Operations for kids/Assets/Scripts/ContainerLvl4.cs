@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ContainerLvl4 : MonoBehaviour
 {
-    public GameObject ballie, cesta;
+    public GameObject cesta;
     public int n1;
     public int n2;//como maximo 5
     public GameObject[] arr = new GameObject[5];
@@ -16,7 +16,7 @@ public class ContainerLvl4 : MonoBehaviour
 
         for (int i = 0; i < n2; i++)
         {
-            arr[i].transform.position = new Vector3(31f + (i + 1) * 14f / (n2), -4.5f, -3); 
+            arr[i].transform.position = new Vector3(31f + (i + 1) * 14f / (n2), -3.5f, -1); 
         }
     }
 

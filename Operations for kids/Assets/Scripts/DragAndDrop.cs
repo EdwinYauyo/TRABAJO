@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
 {
-
+    public BallOutCounter bc;
     public BallOutCounter b;
     Vector2 startPos, endPos, direction;
     float touchTimeStart, touchTimeFinish, timeInterval;
@@ -37,7 +37,7 @@ public class DragAndDrop : MonoBehaviour
             GetComponent<Rigidbody2D>().AddForce(-direction / timeInterval * throwForce);
             moveFlag = false;
         }
-        if (transform.position.x < 10 || transform.position.x > 28 || transform.position.y > -7 || transform.position.y < -28) {
+        if (transform.position.x < 10 || transform.position.x > 28 || transform.position.y > -7 || transform.position.y < -28 ) {
             Destroy(gameObject, 0f);
         }
     }

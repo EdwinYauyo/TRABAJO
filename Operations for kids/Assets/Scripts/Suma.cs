@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Suma : MonoBehaviour
 {
+    public GameObject add;
+    public Invoke_Left il;
+    public Invoke_Right ir;
     public int a, b, sum;
     public Text aa;
     public Text bb;
@@ -20,6 +23,12 @@ public class Suma : MonoBehaviour
         aa.text = a.ToString();
         bb.text = b.ToString();
         suma.text = sum.ToString();
+
+        if (il.number_balls_l + ir.number_balls_r == sum)
+        {
+            add.SetActive(true);
+        }
+
     }
 
     void generarAl()
