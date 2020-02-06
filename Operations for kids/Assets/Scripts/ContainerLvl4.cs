@@ -5,21 +5,25 @@ using UnityEngine;
 public class ContainerLvl4 : MonoBehaviour
 {
     public GameObject ballie, cesta;
-    public int n1 = 8;
-    public int n2 = 6; //como maximo 5
+    public int n1;
+    public int n2;//como maximo 5
     void Start()
     {
+        while (!(n1 > n2 && n1%n2 == 0)) {
+            generarNumber();
+        }
         for (int i = 0; i < n1; i++) {
-            Instantiate(ballie, new Vector3(38f + (i + 1)*6/n1 , 4, -1), Quaternion.identity);
+            Instantiate(ballie, new Vector3(38f + (i + 1)*6/n1 , 4, -2), Quaternion.identity);
         }
         for (int i = 0; i < n2; i++)
         {
-            Instantiate(cesta, new Vector3(31f + (i+1)*14f / (n2), -4.5f, -2), Quaternion.identity);
+            Instantiate(cesta, new Vector3(31f + (i+1)*14f / (n2), -4.5f, -3), Quaternion.identity);
         }
     }
 
-    void Update()
-    {
-        
+    void generarNumber() {
+        System.Random rnd = new System.Random();
+        n1 = rnd.Next(5, 15);
+        n2 = rnd.Next(2, 5);
     }
 }

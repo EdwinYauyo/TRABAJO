@@ -7283,7 +7283,7 @@ MonoBehaviour:
   ballie: {fileID: 2535498461763838721, guid: d0b40d66e830be2488c7754f6a6878aa, type: 3}
   cesta: {fileID: 7490182981288491380, guid: 1b4a5cc8b1e88694aa97b31a1fd6d380, type: 3}
   n1: 8
-  n2: 6
+  n2: 3
 --- !u!61 &1824830584
 BoxCollider2D:
   m_ObjectHideFlags: 0
