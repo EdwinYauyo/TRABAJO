@@ -12,9 +12,7 @@ public class ContainerLvl4 : MonoBehaviour
         while (!(n1 > n2 && n1%n2 == 0)) {
             generarNumber();
         }
-        for (int i = 0; i < n1; i++) {
-            Instantiate(ballie, new Vector3(38f + (i + 1)*6/n1 , 4, -2), Quaternion.identity);
-        }
+
         for (int i = 0; i < n2; i++)
         {
             Instantiate(cesta, new Vector3(31f + (i+1)*14f / (n2), -4.5f, -3), Quaternion.identity);
