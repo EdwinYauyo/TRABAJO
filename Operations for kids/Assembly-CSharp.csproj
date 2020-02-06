@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BallLvl4.cs" />
     <Compile Include="Assets\Scripts\BallOutCounter.cs" />
     <Compile Include="Assets\Scripts\cameraMov.cs" />
     <Compile Include="Assets\Scripts\canvas1_controlls.cs" />
