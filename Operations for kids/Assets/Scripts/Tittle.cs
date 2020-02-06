@@ -10,13 +10,14 @@ public class Tittle : MonoBehaviour
     {
         
     }
-
+    
     // Update is called once per frame
     void Update()
     {
         if (Input.touchCount == 1)
         {
-            SceneManager.LoadScene("SampleScene");
+            
+            SceneManager.LoadScene("User");
         }
     }
 }
