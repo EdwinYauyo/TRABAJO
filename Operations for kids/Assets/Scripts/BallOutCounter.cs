@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BallOutCounter : MonoBehaviour
 {
+    public GameObject text;
     public GameObject iw;
     public bool congra=false;
     public GameObject ballie;
@@ -34,6 +35,7 @@ public class BallOutCounter : MonoBehaviour
             congr.SetActive(true);
             iw.GetComponent<Collider2D>().isTrigger = false;
             congra = true;
+            text.SetActive(false);
         }
 
         

@@ -17,8 +17,9 @@ public class User_reg : MonoBehaviour
 
     public void Vibrar()
     {
-        Handheld.Vibrate();
         SceneManager.LoadScene("SampleScene");
+        Handheld.Vibrate();
+        
     }
 
     

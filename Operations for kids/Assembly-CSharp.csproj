@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\RopeBridge.cs" />
     <Compile Include="Assets\Scripts\Suma.cs" />
     <Compile Include="Assets\Scripts\Tittle.cs" />
+    <Compile Include="Assets\Scripts\touch.cs" />
     <Compile Include="Assets\Scripts\Touchp.cs" />
     <Compile Include="Assets\Scripts\User_reg.cs" />
     <Reference Include="Unity.Timeline.Editor">

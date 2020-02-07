@@ -51,6 +51,7 @@ public class canvas1_controlls : MonoBehaviour
     }
     public void movGame4()
     {
+
         cam.transform.position = game4.transform.position + new Vector3(0, 0, -10);
         canvas1.SetActive(false);
         returnB.SetActive(true);
