@@ -31,31 +31,35 @@ public class canvas1_controlls : MonoBehaviour
     {
         cam.transform.position = game1.transform.position+new Vector3(0,0,-10);
         canvas1.SetActive(false);
+        
+        canvas_game1.SetActive(true);
         returnB.SetActive(true);
-        canvas_game1.SetActive(true);   
     }
 
     public void movGame2()
     {
         cam.transform.position = game2.transform.position + new Vector3(0, 0, -10);
         canvas1.SetActive(false);
-        returnB.SetActive(true);
+        
         canvas_game2.SetActive(true);
+        returnB.SetActive(true);
     }
     public void movGame3()
     {
         cam.transform.position = game3.transform.position + new Vector3(0, 0, -10);
         canvas1.SetActive(false);
-        returnB.SetActive(true);
+        
         canvas_game3.SetActive(true);
+        returnB.SetActive(true);
     }
     public void movGame4()
     {
 
         cam.transform.position = game4.transform.position + new Vector3(0, 0, -10);
         canvas1.SetActive(false);
-        returnB.SetActive(true);
+        
         canvas_game4.SetActive(true);
+        returnB.SetActive(true);
 
     }
 }
